@@ -1,0 +1,7 @@
+FONTS :https://fonts.google.com/specimen/Poppins
+
+ICONS : https://www.freepng.fr/png-y8d2gm/download.html
+
+HTML & CSS :https://www.w3schools.com/
+
+web site : https://app.netlify.com/sites/wonderful-profiterole-cee133/overview

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pain Portfolio</title>
+    <link rel = "icon" href ="./assets/html-icon.png" 
+        type = "image/x-icon"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body> 
+        <nav id="desktop-nav">
+            <div class="logo">Pully Tattooist</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experiences</a></li>
+                    <li><a href="#arts">Arts</li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Pully Tattooist</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experiences</a></li>
+                    <li><a href="#arts" onclick="toggleMenu()">Arts</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+        </div>
+        </nav>
+        <section id="profile">
+            <div class="section_pic-container">
+                <img src="./linh's images/profile_img_linh.png" alt="Pully's profile picture"/>
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Linh</h1>
+                <p class="section__text__p2">Fine line Tattooist 𝐸𝑀 𝐵𝐸́ 𝑇𝐻𝑂̛̣ 𝑋𝐴̆𝑀 ♡🧸</p>    
+                <div class="btn-container">
+                    <button class="btn btn-color-2"
+                     onclick="window.open('./assets/finn-resume.pdf')">Download CV</button>
+                    <button class="btn btn-color-1"
+                     onclick="location.href='./#contact'">Contact Info - Booking</button>
+                </div>
+                <div id="socials-container">
+                     <img 
+                    src="./assets/instagram.png" 
+                    alt="My instagram" 
+                    class="icon" 
+                    onclick="location.href='https://www.instagram.com/pully.tattooist/'"
+                    /> 
+                    <img 
+                    src="./assets/facebook.png" 
+                    alt="My facebook profile" 
+                    class="icon" 
+                    onclick="location.href='https://www.facebook.com/imm.linhh'"
+                    /> <img 
+                    src="./linh's images/tiktok-icon.png" 
+                    alt="My facebook profile" 
+                    class="icon" 
+                    onclick="location.href='https://www.tiktok.com/@linhlinhtattoo'"
+                    />
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Get to know more</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section_pic-container">
+                    <img src="./linh's images/about_pic.jpg"
+                    alt="Profile picture"
+                    class="about-pic"
+                    />
+                </div>
+                <dic class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/experience.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <h3>Experiences</h3>
+                            <p>Xăm</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/education.png" 
+                            alt="Educations icon"
+                            class="icon"
+                            />
+                            <h3>Educations</h3>
+                            <p>Bachelor of Computer Science <br/> Master of Sleep</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Accusantium nobis expedita eligendi eius ad eos rem laboriosam 
+                            qui est nemo a alias, quod ratione reprehenderit error aperiam accusamus non doloribus cumque omnis minus adipisci. Impedit, iure iusto? Aut sint earum, 
+                            praesentium ipsum inventore odio aperiam id maxime, sit possimus voluptatibus.</p>
+                    </div>
+                </dic>
+            </div>
+            <img src="./assets/arrow.png" 
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#experience'"
+            />
+        </section>
+        <section id="experience">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Frontend developpement</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/html.png"
+                                alt="Experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                   <h3>HTML</h3>
+                                   <p>Noob WORKING ON RIGHT NOW</p>     
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/css.png"
+                                alt="Experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                   <h3>CSS</h3>
+                                   <p>Noob WORKING ON RIGHT NOW</p>     
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/javascript.png"
+                                alt="Experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                   <h3>Javascript</h3>
+                                   <p>Noob WORKING ON RIGHT NOW</p>     
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/react.png"
+                                alt="Experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                   <h3>React</h3>
+                                   <p>Noob  PENDING</p>     
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Backend developpement</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/php.png"
+                                alt="Experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                   <h3>php</h3>
+                                   <p>Noob PENDING</p>     
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/nodejs.png "
+                                alt="Experience icon"
+                                class="icon"
+                                
+                                />
+                                <div>
+                                   <h3>Nodejs</h3>
+                                   <p>Noob PENDING</p>     
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/sql.png"
+                                alt="Experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                   <h3>SQL</h3>
+                                   <p>Noob PENDING</p>     
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/postgresql.png"
+                                alt="Experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                   <h3>PostgreSQL</h3>
+                                   <p>Noob PENDING</p>     
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/git.png"
+                                alt="Experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                   <h3>Git</h3>
+                                   <p>Noob PENDING</p>     
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <img src="./assets/arrow.png" 
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#projects'"
+            />
+        </section>
+        <section id="arts">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+               <div class="about-containers">
+                <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png"
+                    alt="Project 1"
+                    class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">First Project web</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/LongThanhTng/Webproject'"
+                >Github</button>
+                    <button class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/LongThanhTng/Webproject'"
+                >Live Demo</button>
+                    
+                </div>
+                
+                </div>
+                <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.gif"
+                    alt="Project 2"
+                    class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Paralax Scroll</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/LongThanhTng/Webproject'"
+                >Github</button>
+                    <button class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/LongThanhTng/Webproject'"
+                >Live Demo</button>
+                    
+                </div>
+                
+                </div>
+                <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png"
+                    alt="Project 3"
+                    class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Game project</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/LongThanhTng/Webproject'"
+                >Github</button>
+                    <button class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/LongThanhTng/Webproject'"
+                >Live Demo</button>      
+                </div>
+                </div>
+               </div>
+               <img src="./assets/arrow.png" 
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+        />
+        </div>
+        </section>
+        <section id="contact">
+            <p class="section__text__p1">Get in touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png"
+                    alt="Email icon"
+                    class="icon contact-icon email-icon" 
+                    />
+                <p><a href="mailto:shinosuke201@gmail.com">EMAIL CUA LINH@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png"
+                    alt="LinkedIn icon"
+                    class="icon contact-icon"
+                    />
+                    <p>No 0983350424</a></p>
+                </div>
+            </div> 
+        </section>   
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experiences</a></li>
+                        <li><a href="#projects">Arts</li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2023 Pully</p> 
+            <!-- &#169 copyright symbol -->
+            </footer>
+        </footer>   
+<script src="script.js"></script>
+</body>
+</html>

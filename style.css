@@ -1,0 +1,658 @@
+/* General styling */
+
+/* font poppins */ 
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Mrs+Saint+Delafield&family=Poppins:wght@300;400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=League+Script&family=Mrs+Saint+Delafield&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=League+Script&family=Love+Light&family=Mrs+Saint+Delafield&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+  *{
+    margin: 0;
+   padding: 0;
+ }
+ 
+ body{
+    font-family:'Poppins', sans-serif; ;
+ }
+
+ 
+
+ html{
+    scroll-behavior: smooth;
+ }
+
+ p{
+    color: rgb(85, 85, 85);
+ }
+
+ /* Transition */
+
+ a, .btn{
+   transition: all 300ms ease;
+ }
+
+ /* desktop nav */
+ nav, .nav-links{
+display: flex;
+ }
+ nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+ }
+ .nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+ }
+ a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+ }
+ .logo{
+    font-size: 2rem;
+    cursor: pointer;
+ }
+ a:hover{
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 0.6rem;
+    text-decoration-color:rgb(73, 109, 44) ;
+}
+.logo:hover{
+    cursor: default;
+}
+/* hambburger menu */
+#hamburger-nav{
+    display: none;
+}
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links li{
+    list-style: none; 
+    /* remove bullet points */
+}
+.menu-links.open{
+    max-height: 300px;
+}
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px,5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px,-5px);
+}
+.hamburger-icon span:first-child{
+    transform: none;
+}
+.hamburger-icon span:first-child{
+    opacity: 1;
+}
+.hamburger-icon span:first-child{
+    transform: none;
+}
+
+/* styling for sections */
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+.section-container{
+    display: flex;
+}
+/* profile section  */
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+.section_pic-container{
+    display: flex;
+    height: 500px;
+    width: 500px;
+    margin: auto 0;
+}
+.section__text{
+    align-self: center;
+    text-align: center;
+}
+.section__text p{
+    font-weight: 600;
+}
+.section__text__p1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.section__text__p2{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+#social-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+/* ICONS */
+.icon{
+    cursor: pointer;
+    height: 2rem;
+    margin-top: 0.5rem;
+}
+
+/* styling buttons */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn{
+    font-weight: 600;
+    transition: al 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+.btn-color-1, .btn-color-2{
+    border: rgb(53, 53, 53);
+}
+.btn-color-1:hover, .btn-color-2:hover{
+    cursor: pointer;
+}
+.btn-color-1, .btn-color-2:hover{
+    background: rgb(53, 53, 53);
+    color: white;
+}
+.btn-color-1:hover{
+    background: rgb(0, 0, 0);
+}
+btn-color-2{
+    background: none;
+}
+.btn-color-2:hover{
+    border: rgb(255, 255, 255); 
+}
+
+
+/* About styling section */
+#about{
+    position: relative;
+}
+.about-containers{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+.about-containers,
+ .about-details-container{
+    display: flex;
+}
+.about-pic{
+    border-radius: 2rem;
+}
+.arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.121rem solid;
+    border-color: rgb(73, 109, 44);
+    text-align: center;
+}
+.section-container{
+    gap: 4rem;
+    height: 80%;
+}
+.section__pic-container{
+    height : 400px;
+    width: 400px;
+    margin: auto 0;
+}
+/* styling experience */
+#experience{
+    position: relative;
+}
+.experience-sub-title{
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.experience-detail-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.article-container{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+}
+article{
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+article .icon{
+    cursor: default;
+}
+
+/* projects styling */
+#arts{
+    position: relative;
+}
+.color-container{
+    border-color: rgb(163, 163, 163) ;
+    background-color: rgb(250, 250, 250);
+}
+.arts-img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+.arts-title{
+    margin: 1rem;
+    color:rgb(0, 0, 0);
+}
+.arts-btn{
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+#project{
+    position: relative;
+}
+.project-img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+.project-title{
+    margin: 1rem;
+    color:rgb(0, 0, 0);
+}
+.project-btn{
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+/* contact styling */
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.15rem solid;
+    border-color: rgb(163, 163, 163);
+    background: rgb(250,250,250);
+    margin: 2rem auto;
+    padding: 0.1rem;
+}
+
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1.5rem;
+}
+.container-info-container p{
+    font-size: larger;
+}
+.contact-icon{
+    cursor: default;
+}
+.email-icon{
+    height: 2.5rem;
+}
+
+/* footer section */
+foot{
+    height: 26vh;
+    margin: 0 1rem;
+}
+footer p{
+    text-align: center;
+}
+
+
+/* language button */
+.language-btn {
+    padding: 10px 20px ;
+    margin: 10px;
+}
+.lang_image_bg{
+    background-image: url("./linh\'s\ images/language_page_bg.jpg");
+    overflow: hidden;
+    height: auto;
+}
+.btn-color-3{
+    border: rgb(53, 53, 53);
+}
+.btn-color-3:hover{
+    cursor: pointer;
+}
+.btn-color-3, .btn-color-3:hover{
+    background: grey;
+    color: white;
+}
+.btn-color-3:hover{
+    background: salmon;
+}
+
+.btn-color-3:hover{
+    border: rgb(255, 255, 255); 
+}
+.logo_lang_color{
+    color : whitesmoke
+}
+.title_lang_color{
+    color: beige;
+}
+.section__lang_text_color{
+    color: whitesmoke;
+}
+.lang_section_font{
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-weight: 400;
+}
+.section__text__p3{
+    text-align : left ;
+    font-size: 5rem;
+}
+.title_lang{
+    font-size: 7rem;
+    text-align: left;
+    font-family: 'Love Light', cursive;
+    
+}
+
+.type--A{
+    --line_color : whitesmoke ;
+    --back_color : #FFECF6  ;
+  }
+
+  .button_lang{
+      position : relative ;
+      z-index : 0 ;
+      width : 240px ;
+      height : 56px ;
+      text-decoration : none ;
+      font-size : 14px ; 
+      font-weight : bold ;
+      color : seashell ;
+      letter-spacing : 2px ;
+      transition : all .3s ease ;
+      margin-top: 2rem;
+      
+  }
+  .button__text{
+      display : flex ;
+      justify-content : center ;
+      align-items : center ;
+      width : 100% ;
+      height : 100% ;
+      font-size: 2rem;
+      font-family: 'Dancing Script', cursive;
+  }
+  .button_lang::before,
+  .button_lang::after,
+  .button__text::before,
+  .button__text::after{
+      content : '' ;
+      position : absolute ;
+      height : 3px ;
+      border-radius : 2px ;
+      background : lightpink ;
+      transition : all .5s ease ;
+  }
+  .button_lang::before{
+      top : 0 ;
+      left : 54px ;
+      width : calc( 100% - 56px * 2 - 16px ) ;
+  }
+  .button_lang::after{
+      top : 0 ;
+      right : 54px ;
+      width : 8px ;
+      
+  }
+  .button__text::before{
+      bottom : 0 ;
+      right : 54px ;
+      width : calc( 100% - 56px * 2 - 16px ) ;
+  }
+  .button__text::after{
+      bottom : 0 ;
+      left : 54px ;
+      width : 8px ; 
+  }
+  .button__line{
+      position : absolute ;
+      top : 0 ;
+      width : 56px ;
+      height : 100% ;
+      overflow : hidden ;
+      
+  }
+  .button__line::before{
+      content : '' ;
+      position : absolute ;
+      top : 0 ;
+      width : 150% ;
+      height : 100% ;
+      box-sizing : border-box ;
+      border-radius : 300px ;
+      border : solid 3px var(--line_color) ;
+  }
+  .button__line:nth-child(1),
+  .button__line:nth-child(1)::before{
+      left : 0 ;
+  }
+  .button__line:nth-child(2),
+  .button__line:nth-child(2)::before{
+      right : 0 ;
+  }
+  .button:hover{
+      letter-spacing : 6px ;
+  }
+  .button_lang:hover::before,
+  .button_lang:hover .button__text::before{
+      width : 8px ;
+  }
+  .button_lang:hover::after,
+  .button:hover .button__text::after{
+      width : calc( 100% - 56px * 2 - 16px ) ;
+      
+  }
+  .button__drow1,
+  .button__drow2{
+      position : absolute ;
+      z-index : -1 ;
+      border-radius : 16px ;
+      transform-origin : 16px 16px ;
+  }
+  .button__drow1{
+      top : -16px ;
+      left : 40px ;
+      width : 32px ;
+      height : 0;
+      transform : rotate( 30deg ) ;
+  }
+  .button__drow2{
+      top : 44px ;
+      left : 77px ;
+      width : 32px ;
+      height : 0 ;
+      transform : rotate(-127deg ) ;
+  }
+  .button__drow1::before,
+  .button__drow1::after,
+  .button__drow2::before,
+  .button__drow2::after{
+      content : '' ;
+      position : absolute ;
+  }
+  .button__drow1::before{
+      bottom : 0 ;
+      left : 0 ;
+      width : 0 ;
+      height : 32px ;
+      border-radius : 16px ;
+      transform-origin : 16px 16px ;
+      transform : rotate( -60deg ) ;
+  }
+  .button__drow1::after{
+      top : -10px ;
+      left : 45px ;
+      width : 0 ;
+      height : 32px ;
+      border-radius : 16px ;
+      transform-origin : 16px 16px ;
+      transform : rotate( 69deg ) ;
+  }
+  .button__drow2::before{
+      bottom : 0 ;
+      left : 0 ;
+      width : 0 ;
+      height : 32px ;
+      border-radius : 16px ;
+      transform-origin : 16px 16px ;
+      transform : rotate( -146deg ) ;
+  }
+  .button__drow2::after{
+      bottom : 26px ;
+      left : -40px ;
+      width : 0 ;
+      height : 32px ;
+      border-radius : 16px ;
+      transform-origin : 16px 16px ;
+      transform : rotate( -262deg ) ;
+  }
+  .button__drow1,
+  .button__drow1::before,
+  .button__drow1::after,
+  .button__drow2,
+  .button__drow2::before,
+  .button__drow2::after{
+      background : var( --back_color ) ;
+  }
+  .button_lang:hover .button__drow1{
+      animation : drow1 ease-in .06s ;
+      animation-fill-mode : forwards ;
+  }
+  .button_lang:hover .button__drow1::before{
+      animation : drow2 linear .08s .06s ;
+      animation-fill-mode : forwards ;
+  }
+  .button_lang:hover .button__drow1::after{
+      animation : drow3 linear .03s .14s ;
+      animation-fill-mode : forwards ;
+  }
+  .button_lang:hover .button__drow2{
+      animation : drow4 linear .06s .2s ;
+      animation-fill-mode : forwards ;
+  }
+  .button_lang:hover .button__drow2::before{
+      animation : drow3 linear .03s .26s ;
+      animation-fill-mode : forwards ;
+  }
+  .button_lang:hover .button__drow2::after{
+      animation : drow5 linear .06s .32s ;
+      animation-fill-mode : forwards ;
+  }
+  @keyframes drow1{
+      0%   { height : 0 ; }
+      100% { height : 100px ; }
+  }
+  @keyframes drow2{
+      0%   { width : 0 ; opacity : 0 ;}
+      10%  { opacity : 0 ;}
+      11%  { opacity : 1 ;}
+      100% { width : 120px ; }
+  }
+  @keyframes drow3{
+      0%   { width : 0 ; }
+      100% { width : 80px ; }
+  }
+  @keyframes drow4{
+      0%   { height : 0 ; }
+      100% { height : 120px ; }
+  }
+  @keyframes drow5{
+      0%   { width : 0 ; }
+      100% { width : 124px ; }
+  }
+
+  .button_lang:not(:last-child){
+    margin-bottom : 64px ;
+  }
